@@ -26,7 +26,7 @@ Also we need to add
 			<artifactId>spring-boot-starter-data-jpa</artifactId>
 		</dependency>
 ``````
-The best way is to create a **Spring Boot** project using **Spring Stater Project** with **Spring Web**, **Spring Data JPA** and **H2 Database** dependencies. 
+The best way is to create a **Spring Boot** project using **Spring Stater Project** with **Spring Web**, **Spring Data JPA** and **H2 Database** dependencies. A similar link can be followed if you interested how to add STS in Eclipse IDE and add dependency using Spring Starter Project [GitHub](https://github.com/rafsan-jany/spring-boot-web).
 
 The configuration in **appliction.properties** is <br/>
 
@@ -56,7 +56,7 @@ GET | http://localhost:8080/student | Fetch all students
 PUT | http://localhost:8080/student/1 | Update student using ID
 DELETE | http://localhost:8080/student/1 | Delete student using ID
 
-After staring the project on port 8080, firt need to login the H2 Database using the `http://localhost:8080/h2-console/` url. just insert the password that is set in application.properties. <br/>
+After starting the project on port 8080, first need to login the H2 Database using the `http://localhost:8080/h2-console/` url. just insert the password that is set in application.properties. <br/>
 
 ![h2_db_login](https://user-images.githubusercontent.com/27615818/124883761-7bae4e80-dff3-11eb-883a-c1968fee2f11.PNG)
 
