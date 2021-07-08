@@ -1,7 +1,5 @@
 # spring-boot-rest-api-h2-database
-This is a very basic project for beginners to learn about **Spring Boot CRUD** operations using **REST-API** and **H2 Embedded Database**. Let's have some fun! <br/>
-
-We all know about CRUD operation is the combination of Create (SAVE), Read (GET), Update (PUT) and Delete (DELETE). Some of us do not know about H2 Database but we all know about MySQL or PostgreSQL database. Let's learn about H2!<br/>
+This is a very basic project for beginners to learn about **Spring Boot CRUD** operations using **REST-API** and **H2 Embedded Database**. We all know about CRUD operation is the combination of Create (SAVE), Read (GET), Update (PUT) and Delete (DELETE). Some of us do not know about H2 Database but we all know about MySQL or PostgreSQL database. Let's learn about H2!<br/>
 
 ## H2 Database
 H2 is an embedded and in-memory database. That means the data we are going to save using our spring boot project will be stored in a temporary memory. In this project we will save Student entity (id, name, age, email) in our H2 db. When we will store the Student object, It persists only in system-memory for that session not in the disk for permanently. That means if the session end, the data from the H2 DB will be erased. What about if we want to store data permanently in disk? Well, for this purpose, we use MySQL, PostgreSQL or OracleDB. <br/>
