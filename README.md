@@ -6,7 +6,9 @@ H2 is an embedded and in-memory database. That means the data we are going to sa
 
 There are some other benifits too. We do not need to install H2 DB in our system, just need to add dependency to the spring boot pom.xml and configurations in application.properties. For this benifits, H2 DB is used widely for POCs (Proof of Concepts) and unit testing. Apache Derby is another known in-memory database.<br/> 
 
-The dependency in **pom.xml** is <br/>
+The best way is to create a **Spring Boot** project using **Spring Stater Project** to add **Spring Web**, **Spring Data JPA** and **H2 Database** dependencies. A similar link can be followed if you are interested how to add STS in Eclipse IDE and add dependency using Spring Starter Project [GitHub](https://github.com/rafsan-jany/spring-boot-web). <br/>
+
+The **Spring Web**, **Spring Data JPA** and **H2 Database** dependencies in **pom.xml** are <br/>
 
 ``````
 		<dependency>
@@ -14,17 +16,15 @@ The dependency in **pom.xml** is <br/>
 			<artifactId>h2</artifactId>
 			<scope>runtime</scope>
 		</dependency>
-``````
-
-Also we need to add 
-
-``````
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-web</artifactId>
+		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-data-jpa</artifactId>
 		</dependency>
 ``````
-The best way is to create a **Spring Boot** project using **Spring Stater Project** with **Spring Web**, **Spring Data JPA** and **H2 Database** dependencies. A similar link can be followed if you interested how to add STS in Eclipse IDE and add dependency using Spring Starter Project [GitHub](https://github.com/rafsan-jany/spring-boot-web).
 
 The configuration in **appliction.properties** is <br/>
 
